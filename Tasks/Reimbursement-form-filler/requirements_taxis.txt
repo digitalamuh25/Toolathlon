@@ -1,0 +1,8 @@
+Only consider receipts with taxi rides occurring within the relevant reporting quarter (e.g., quarter ended 28 February, quarter ended 31 May, quarter ended 31 August, quarter ended 30 November).
+Extract the following data from the receipts identified at point 1: date, receipt number, passenger name, pick-up location, drop-off location, total fare, VAT.
+Output the data into “taxi_receipts_template.xlsx” and analyse it using only the headings provided: “Date”, “Receipt no.”, “Trip description”, “Passenger”, “Pick-up”, “Drop-off”, “Total fare”, “VAT”, “Net”.
+If the drop-off location is a London Airport, record “Sales meeting EMEA” as the “Trip description” in “taxi_receipts_template.xlsx”.
+If the drop-off location is not a London Airport, record “TBC” as the “Trip description” in “taxi_receipts_template.xlsx”.
+“VAT” should only be populated in “taxi_receipts_template.xlsx” if the receipt quotes a VAT registration number.
+All VAT included in “taxi_receipts_template.xlsx” must be at the standard rate.
+“Net” is calculated as the “Total fare” less “VAT”.
